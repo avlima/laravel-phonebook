@@ -1,8 +1,6 @@
 # laravel-phonebook
 
-A MVC skeleton on the arms of Laravel 5 + AngularJS + AngularUI Router + AdminLTE 2
-
-This skeleton use Composer, Laravel 5, AngularJS, AngularUI Router, AdminLTE 2 and jQuery
+A MVC skeleton on the arms of Laravel 5.4 + Passport + Auth + Hybrid Controller REST and FORM + Single database multi-tenancy
 
 ## Quick start
 
@@ -38,7 +36,7 @@ php -r "readfile('https://getcomposer.org/installer');" | php
 composer install
 ```
 
-9 - Generate key with artisan.
+5 - Generate key with artisan.
 
 
 Rename the file .env.axample to .env
@@ -47,16 +45,27 @@ Rename the file .env.axample to .env
 mv .env.axample .env
 ```
 
-and
+6 - Import sql file.
+
+
+Run phonebook.sql and configure .env if you want to change the path
 
 ```bash
-php artisan key:generate
+vi .env
+```
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=phonebook
+DB_USERNAME=root
+DB_PASSWORD=secret
 ```
 
-10 - Start PHP Built-in web server:
+7 - Start server:
 
 ```bash
-php -S 127.0.0.1:8000 -t public/
+php artisan serve
 ```
 
 or
@@ -65,6 +74,10 @@ or
 php -S 0.0.0.0:8000 -t public/
 ```
 
+## Contributing
+
+If you find an issue, or have a better way to do something, feel free to open an issue or a pull request.
+
 ##Copyright and license
 
-Code and documentation copyright (c) 2015, Code released under the New BSD license.
+Code and documentation copyright (c) 2017, Code released under the New BSD license.
