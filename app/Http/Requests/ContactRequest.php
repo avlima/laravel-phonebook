@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Utils\HelperUtils;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 
 class ContactRequest extends FormRequest
 {
@@ -24,7 +26,7 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|min:5|max:191',
+            'name' => 'required|string|min:2|max:191',
             'phone' => 'required|string|min:10',
             'email' => 'required|string|min:10',
         ];

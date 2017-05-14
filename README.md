@@ -62,7 +62,13 @@ DB_USERNAME=root
 DB_PASSWORD=secret
 ```
 
-7 - Start server:
+7 - Install passport:
+
+```bash
+php artisan passport:install
+```
+
+8 - Start server:
 
 ```bash
 php artisan serve
@@ -72,6 +78,12 @@ or
 
 ```bash
 php -S 0.0.0.0:8000 -t public/
+```
+
+9 - Collection Link (Import to Postman)
+
+```bash
+https://www.getpostman.com/collections/f51a3b19cfe42ec56c6d
 ```
 
 ## Contributing
