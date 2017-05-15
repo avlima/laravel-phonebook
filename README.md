@@ -90,6 +90,6 @@ https://www.getpostman.com/collections/f51a3b19cfe42ec56c6d
 
 If you find an issue, or have a better way to do something, feel free to open an issue or a pull request.
 
-##Copyright and license
+## Copyright and license
 
 Code and documentation copyright (c) 2017, Code released under the New BSD license.
